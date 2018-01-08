@@ -1,13 +1,29 @@
 extends views/templates/layout_amp
 block content
-	.container.p-0
-		//- bingo site
-		+header(4)
-		+descriptionHero("dark")
-		+description("white")
-		+metas
-		//- RELATED
-		+related(4, "Related Bingo sites")
+	.container-fluid.p-0.newsGridContainer.d-flex.flex-column-reverse.flex-md-row-reverse
+		.col-px.p-4
+			h2.mb-3.titleSection All BINGO ARTICLES
+			ul.list-unstyled.newsGrid.half.d-flex.flex-wrap.flex-row-reverse.flex-md-column-reverse
+				+newsard("Where Did All The Cartoon Characters Go?", 7, 1)
+				+newsard("Win A Car A Day At Sun Bingo", 12, 2)
+				+newsard("White Rabbit   The Next Big Thing In Slot Games?", 15, 2)
+				+newsard("Mysterious Licensing Change at Cozy Bingo Sites", 7, 1)
+				+newsard("Win A Car A Day At Sun Bingo", 22)
+				+newsard("Mysterious Licensing Change at Cozy Bingo Sites", 24, 2)
+				+newsard("Where Did All The Cartoon Characters Go?", 28, 1)
+				+newsard("Mysterious Licensing Change at Cozy Bingo Sites", 31, 2)
+				+newsard("Where Did All The Cartoon Characters Go?", 7, 1)
+				+newsard("Win A Car A Day At Sun Bingo", 12)
+				+newsard("White Rabbit   The Next Big Thing In Slot Games?", 15, 2)
+				+newsard("Mysterious Licensing Change at Cozy Bingo Sites", 7, 1)
+				+newsard("Win A Car A Day At Sun Bingo", 22)
+				+newsard("Mysterious Licensing Change at Cozy Bingo Sites", 24, 2)
+				+newsard("Where Did All The Cartoon Characters Go?", 28, 1)
+				+newsard("Mysterious Licensing Change at Cozy Bingo Sites", 31, 2)
+			+pagination
+		.col-px.p-0
+			+offer
+	hr
 	//- FOOTER CTA
 	//- hr.my-5.footerSpace
 	.fixed-bottom.footerCta

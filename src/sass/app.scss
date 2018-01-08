@@ -1,11 +1,11 @@
-:root{--main-bg-color: #461c19;}
-:root{--bg-00: #ff2e7e;}
-:root{--bg-01: #9c200d;}
-:root{--bg-02: #f0f0f0;}
-:root{--bg-03: pink;}
-:root{--bg-04: red;}
-:root{--bg-05: blue;}
-:root{--bg-06: pink;}
+//:root{--main-bg-color: #461c19;}
+//:root{--bg-00: #ff2e7e;}
+//:root{--bg-01: #9c200d;}
+//:root{--bg-02: #f0f0f0;}
+//:root{--bg-03: pink;}
+//:root{--bg-04: red;}
+//:root{--bg-05: blue;}
+//:root{--bg-06: pink;}
 
 @import "import/variables";
 
@@ -61,3 +61,4 @@
 
 @import "import/svg/_logo";
 @import "import/svg/_general";
+@import "import/gridNews";

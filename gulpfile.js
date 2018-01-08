@@ -15,6 +15,7 @@ var	gulp			= require('gulp'),
 	uglify			= require('gulp-uglify'),
 	useref			= require('gulp-useref'),
 	babel			= require('gulp-babel'),
+	image			= require('gulp-image'),
 	browserSync		= require('browser-sync');
 	//browserSync		= require('browser-sync').create();
 
@@ -74,7 +75,9 @@ gulp.task('uncss',['build'], function () {
 	return gulp.src(paths.sass + '**/*.scss')
 		.pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
 		.pipe(uncss({
-			html: ['app/index_amp.html']
+			//html: ['app/index_amp.html']		// index page
+			html: ['app/index_amp.html', 'app/categ_amp.html' ]		// 
+			
 		}))
 		.pipe(prefix(['last 2 versions'], {
 			cascade: true
@@ -154,9 +157,10 @@ gulp.task('bundle',['copy'], function(){
 		.pipe(gulp.dest(paths.public))
 });
 
+
 gulp.task('img', function(){
 	return gulp.src(paths.img + '**/*')
-		.pipe(imagemin())
+		.pipe(image())
 		.pipe(gulp.dest(paths.pIMG))
 });
 

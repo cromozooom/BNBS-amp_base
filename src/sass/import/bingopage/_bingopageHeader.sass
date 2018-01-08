@@ -1,3 +1,7 @@
+.company-logo
+	border-radius: 0% 50% 50% 0%
+	overflow: hidden
+
 .company
 	&-head
 		background: white
@@ -16,8 +20,6 @@
 		.amp-img
 			width: 100px
 			height: 100px
-			border-radius: 0% 50% 50% 0%
-			background-color: var(--main-bg-color)
 	&-title
 		//border: 1px solid red
 	&-rating-star
@@ -35,7 +37,7 @@
 //@include media-breakpoint-up(sm)
 //@include media-breakpoint-up(md)
 @include media-breakpoint-up(lg)
-	.company
-		&-logo .amp-img
-			border-radius: 50%
+	.company-logo
+		border-radius: 50%
+
 //@include media-breakpoint-up(xl)
